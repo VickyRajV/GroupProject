@@ -1,0 +1,114 @@
+/* Background with gradient */
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #e9ec1b, #e01f1f);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* White login form card */
+.container {
+  width: 100%;
+  max-width: 400px;
+}
+
+.form-box {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 6px 20px rgba(0,0,0,0.2);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border-radius: 6px;
+  border: 2px solid #ccc;
+  outline: none;
+  font-size: 14px;
+}
+
+/* Green/Red border feedback */
+input.valid {
+  border-color: green;
+}
+
+input.invalid {
+  border-color: red;
+}
+
+/* make buttons stack vertically */
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.button-group button {
+  width: 100%;
+  padding: 12px;
+  font-size: 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+/* button colors */
+#togglePassword {
+  background: #2575fc;  /* Blue */
+  color: white;
+}
+#togglePassword:hover {
+  background: #1a5edb;  /* Darker Blue */
+}
+
+.button-group button[type="submit"] {
+  background: #28a745;  /* Green */
+  color: white;
+}
+.button-group button[type="submit"]:hover {
+  background: #218838;
+}
+
+.button-group button[type="reset"] {
+  background: #dc3545;  /* Red */
+  color: white;
+}
+.button-group button[type="reset"]:hover {
+  background: #c82333;
+}
+.emoji {
+  text-align: center;
+  font-size: 100px;
+  margin-bottom: 15px;
+}
+.emoji {
+  text-align: center;
+  font-size: 100px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+/* small bounce effect */
+.emoji.bounce {
+  transform: scale(1.2);
+}
+
